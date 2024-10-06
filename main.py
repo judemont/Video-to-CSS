@@ -104,7 +104,7 @@ with open("index.html", "w") as htmlFile:
     <link rel="stylesheet" href="video.css">
 </head>
 <body>
-    <div style="scale:5" id="cssVideo"></div>
+    <div style="" id="cssVideo"></div>
 </body>
 </html>
     """)

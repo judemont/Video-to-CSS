@@ -49,7 +49,7 @@ def writeCssColors(frame):
     return cssColors
 
 
-def process_frames(start, end, result_list):
+def process_frames(start, end, result_list, thread_id):
     cap = cv2.VideoCapture(videoPath) 
     cap.set(cv2.CAP_PROP_POS_FRAMES, start)
     local_css_result = ""
@@ -63,7 +63,9 @@ def process_frames(start, end, result_list):
             cssColors = writeCssColors(frame)
             local_css_result += "".join(cssColors)[:-1] + ";}\n"
 
-        print(str(round((((i - start) / (end - start)) * 100))) + "%")
+        if(thread_id == num_threads - 1):
+            percentage_done = ((i - start) / (end - start)) * 100
+            print(f"Thread {thread_id}: {percentage_done:.2f}% done")
 
     result_list.append(local_css_result)
     cap.release()
@@ -81,7 +83,7 @@ frames_per_thread = nbFrames // num_threads
 for i in range(num_threads):
     start_frame = i * frames_per_thread
     end_frame = (i + 1) * frames_per_thread if i != num_threads - 1 else nbFrames
-    thread = threading.Thread(target=process_frames, args=(start_frame, end_frame, result_list))
+    thread = threading.Thread(target=process_frames, args=(start_frame, end_frame, result_list, i))
     threads.append(thread)
     thread.start()
 

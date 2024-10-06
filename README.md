@@ -13,6 +13,6 @@ I first wanted to watch Star Wars 1 but my browser crashed...
 
 It lags a bit, but that's due to my computer. It sucks.
 
-# Have you ever seen a css file of 47 GB ?
+## Have you ever seen a css file of 47 GB ?
 ![image](https://github.com/user-attachments/assets/7e970de7-1e8c-485a-97ce-863c92dc8798)
 *Now yes*

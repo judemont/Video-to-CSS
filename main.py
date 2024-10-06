@@ -6,7 +6,7 @@ import os
 
 videoPath = input("Enter the path of the video: ")
 resultFps = int(input("Frames per second: "))
-userHeight = int(input("Resolution (height): "))
+resultHeight = int(input("Resolution (height): "))
 
 cssFileName = "video.css"
 

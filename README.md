@@ -8,8 +8,10 @@ This script was inspired by this website https://dgerrells.com/video-to-css
 
 ## Demo :
 I first wanted to watch Star Wars 1 but my browser crashed...
-[Screencast from 2024-10-06 18-19-58.webm](https://github.com/user-attachments/assets/6a79a6b7-c530-4a38-8973-832ae86d0392)
 
+[Demo](https://github.com/user-attachments/assets/6a79a6b7-c530-4a38-8973-832ae86d0392)
+
+It lags a bit, but that's due to my computer. It sucks.
 
 # Have you ever seen a css file of 47 GB ?
 ![image](https://github.com/user-attachments/assets/7e970de7-1e8c-485a-97ce-863c92dc8798)
